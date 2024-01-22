@@ -1,0 +1,115 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+body {
+  background-image: linear-gradient(45deg, #1d3f87, #401154);
+  height: 100vh;
+}
+
+.card {
+  width: 100%;
+  max-width: 540px;
+  background-color: white;
+  margin: 100px auto 0;
+  padding: 40px 30px 70px;
+  border-radius: 20PX;
+}
+.card h2 {
+  font-weight: 600;
+  font-size: 20px;
+}
+.card img {
+  width: 20px;
+  margin-left: 5px;
+}
+
+.row {
+  background-color: #EDEFF1;
+  display: flex;
+  margin: 20px 0;
+  border-radius: 30px;
+  border: none;
+}
+.row input {
+  flex: 1;
+  background-color: #EDEFF1;
+  height: 60px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  padding-left: 20px;
+}
+.row button {
+  height: 60px;
+  background-color: #FE6F43;
+  border-radius: 30px;
+  border: none;
+  padding: 0 40px;
+  color: white;
+  cursor: pointer;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  margin: 12px 0;
+}
+.list-item img {
+  margin-left: 5px;
+  cursor: pointer;
+}
+.list-item p {
+  flex: 1;
+  margin-left: 10px;
+  font-weight: 400;
+  color: grey;
+  font-size: 16px;
+}
+.list-item i {
+  margin-right: 15px;
+}
+
+.list-container li {
+  list-style: none;
+  font-size: 17px;
+  padding: 12px 8px 12px 50px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+}
+.list-container li::before {
+  content: "";
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background-image: url(/images/unchecked.png);
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  top: 12px;
+  left: 8px;
+}
+.list-container .checked {
+  text-decoration: line-through;
+  color: #555;
+}
+.list-container .checked::before {
+  background-image: url(/images/checked.png);
+}
+.list-container li span {
+  position: absolute;
+  right: 15px;
+  font-size: 22px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 40px;
+}
+.list-container li span:hover {
+  background-color: #edeef0;
+}
